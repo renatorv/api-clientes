@@ -51,3 +51,7 @@ You should see the logging printed in the first terminal:
 ## info
 # Cria projeto: dart create -t server-shelf api-clientes
 # Executa o projeto: dart run bin/server.dart"# api-clientes" 
+
+# Parei
+https://www.youtube.com/watch?v=aoRAGvpVbbc&list=PLK5FPzMuRKlxe8ZDOx7H0OO30R_cazh-q&index=2
+13 minutos
