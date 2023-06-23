@@ -52,6 +52,10 @@ You should see the logging printed in the first terminal:
 # Cria projeto: dart create -t server-shelf api-clientes
 # Executa o projeto: dart run bin/server.dart"# api-clientes" 
 
+# Links
+https://blog.flutterando.com.br/vamos-falar-de-dart-no-backend-3552505f332
+https://www.youtube.com/watch?v=AaQzV1LTmo0&t=1976s
+
 # Parei
 https://www.youtube.com/watch?v=aoRAGvpVbbc&list=PLK5FPzMuRKlxe8ZDOx7H0OO30R_cazh-q&index=2
 13 minutos
