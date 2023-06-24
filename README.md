@@ -58,3 +58,6 @@ https://www.youtube.com/watch?v=AaQzV1LTmo0&t=1976s
 
 # Parei
 finalizei a aula 3: https://www.youtube.com/watch?v=yZDBcP6DN1A&list=PLK5FPzMuRKlxe8ZDOx7H0OO30R_cazh-q&index=3 
+
+# lib
+dart pub add mocktail

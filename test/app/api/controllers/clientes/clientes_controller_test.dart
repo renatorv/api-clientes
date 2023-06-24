@@ -1,6 +1,8 @@
 import 'package:api_clientes/app/api/api.dart';
 import 'package:test/test.dart';
 
+import '../../../../mock.dart';
+
 /// Controllers
 ///
 /// route: /clientes => clientesController
@@ -14,21 +16,19 @@ import 'package:test/test.dart';
 
 void main() {
   late ClientesController controller;
+  late MockGetClientesUseCase mockGetClientesUseCase;
 
   setUpAll(() {
-    controller = ClientesController();
+    mockGetClientesUseCase = MockGetClientesUseCase();
+    controller = ClientesController(getClientesUseCase: mockGetClientesUseCase);
   });
 
   group('ClientesController:', () {
     test('deve conter uma route "clientes"', () async {
-      final controller = ClientesController();
-
       expect(controller.route, '/clientes');
     });
 
     test('deve conter uma key "GET" para o handler GetClientesHandler', () async {
-      final controller = ClientesController();
-
       expect(controller.handlers['GET'], isA<GetClientesHandler>());
     });
   });

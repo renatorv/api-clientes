@@ -1,5 +1,7 @@
 library api;
 
+import '../domain/domain.dart';
+
 part 'controllers/controller.dart';
 part 'controllers/clientes/clientes_controller.dart';
 
