@@ -61,3 +61,7 @@ finalizei a aula 3: https://www.youtube.com/watch?v=yZDBcP6DN1A&list=PLK5FPzMuRK
 
 # lib
 dart pub add mocktail
+
+# DTO
+https://martinfowler.com/articles/gateway-pattern.html
+https://martinfowler.com/eaaCatalog/dataTransferObject.html
