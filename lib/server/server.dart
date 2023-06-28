@@ -4,12 +4,18 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart';
 import 'package:shelf_router/shelf_router.dart';
 
+import '../app/api/api.dart';
+
+part 'adapter/shelf_adapter.dart';
+
 class Server {
-  static Future<HttpServer> bootstrap() async {
+  static Future<HttpServer> bootstrap(List<Controller> controllers) async {
     // Use any available host or container IP (usually `0.0.0.0`).
     final ip = InternetAddress.anyIPv4;
 
     final router = Router();
+
+    ShelfAdapter(controllers: controllers).handle(router);
 
     // Configure a pipeline that logs requests.
     final handler = Pipeline().addMiddleware(logRequests()).addHandler(router);
